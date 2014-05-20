@@ -1,0 +1,23 @@
+<source>
+  type tail
+  format ltsv
+  path /home/ec2-user/tweets.log
+  pos_file /home/ec2-user/tweets.log.pos
+  tag s3
+</source>
+
+<match s3>
+  type s3
+
+  aws_key_id XXXXX
+  aws_sec_key YYYYY
+  s3_bucket guess-the-country
+  path logs/
+  buffer_path /home/ec2-user/s3/buffer
+
+  time_slice_format %Y%m%d%H
+  time_slice_wait 1m
+  utc
+
+  buffer_chunk_limit 256m
+</match>
