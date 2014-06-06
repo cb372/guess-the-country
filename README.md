@@ -16,6 +16,6 @@ Leaving the collector running for about 10 days, I collected 205,798 distinct Tw
 
 * Since the original data is geo-tagged tweets, strictly speaking we only know where a user _is_, not where they come from.
 
-* Makes no attempt to validate that people are using there real names. This results in a noisy dataset, but doesn't affect the accuracy when you're searching for a real name such as 'John'.
+* Makes no attempt to validate that people are using their real names. This results in a noisy dataset, but doesn't affect the accuracy when you're searching for a real name such as 'John'.
 
 
