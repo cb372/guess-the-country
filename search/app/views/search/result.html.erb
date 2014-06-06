@@ -1,0 +1,36 @@
+<html>
+  <body>
+    <h1>Results</h1>
+    <% if @first_name_term %>
+      <p>
+        <% if @first_name_result.present? %>
+          A person with first name <b><%= @first_name_term %></b> is probably from one of these countries: <b><%= @first_name_result %></b>.
+        <% else %>
+          Sorry, I don't know anybody with first name <b><%= @first_name_term %></b>.
+        <% end %>
+      </p>
+      <hr/>
+    <% end %>
+    <% if @second_name_term %>
+      <p>
+        <% if @second_name_result.present? %>
+          A person with second name <b><%= @second_name_term %></b> is probably from one of these countries: <b><%= @second_name_result %></b>.
+        <% else %>
+          Sorry, I don't know anybody with second name <b><%= @second_name_term %></b>.
+        <% end %>
+      </p>
+      <hr/>
+    <% end %>
+    <% if @full_name_term %>
+      <p>
+        <% if @full_name_result.present? %>
+          A person with full name <b><%= @full_name_term %></b> is probably from one of these countries: <b><%= @full_name_result %></b>.
+        <% else %>
+          Sorry, I don't know anybody with full name <b><%= @full_name_term %></b>.
+        <% end %>
+      </p>
+      <hr/>
+    <% end %>
+    <p><a href="/">Search again</a></p>
+  </body>
+</html>

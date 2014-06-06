@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <h1>Guess the country</h1>
+
+    <%= form_tag do %>
+      <p>Fill in one or both names, and I'll try to guess what country the person is from.</p>
+      <p>
+      First name: <input name="first_name" placeholder="e.g. Chris" />
+      </p>
+      <p>
+      Second name: <input name="second_name" placeholder="e.g. Birchall" />
+      </p>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+
+    <% end %>
+  </body>
+</html>
+      
