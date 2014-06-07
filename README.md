@@ -1,5 +1,11 @@
 # Guess the country
 
+## Live demo
+
+[http://guess-the-country.herokuapp.com/](http://guess-the-country.herokuapp.com/)
+
+## How it works
+
 Twitter streaming API -> Twitter4j -> Fluentd -> S3 -> Spark -> RDS (Postgres) -> Rails
 
 Collects (first name, second name, country) tuples using geo-tagged tweets from the Twitter streaming sample API.
